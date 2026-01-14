@@ -1,0 +1,185 @@
+/* ================= Style.css (FULL & UPDATED) ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0b3c4d, #052a33);
+}
+
+/* HERO */
+.hero-bg {
+    background: linear-gradient(180deg, #eaf4f6, #dceef3);
+    margin: 30px;
+    border-radius: 40px;
+    padding: 40px;
+}
+
+.hero-nav {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 14px 26px;
+    border-radius: 40px;
+}
+
+.nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-btn {
+    background: #00b4d8;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+.hero-sub {
+    max-width: 700px;
+    margin: auto;
+}
+
+.hero-actions {
+    margin-top: 35px;
+}
+
+.hero-btn {
+    font-weight: 700;
+    border-radius: 999px;
+    padding: 16px 36px;
+    font-size: 17px;
+}
+
+.primary {
+    background: #00b4d8;
+    color: white;
+}
+
+.secondary {
+    background: white;
+    color: #333;
+}
+
+/* ZIGZAG */
+.zigzag {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 110px 60px;
+}
+
+.zigzag.left { flex-direction: row; }
+.zigzag.right { flex-direction: row-reverse; }
+
+.zigzag img {
+    width: 300px;
+    border-radius: 30px;
+}
+
+/* BIG FULL-WIDTH BOX */
+.zigzag-box.full-box {
+    background: rgba(255,255,255,0.97);
+    padding: 70px;
+    border-radius: 36px;
+    width: 100%;
+    max-width: 1000px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.zigzag-box h2 {
+    font-size: 34px;
+    margin-bottom: 24px;
+}
+
+.zigzag-box h3 {
+    font-size: 24px;
+    margin-top: 28px;
+    margin-bottom: 14px;
+}
+
+/* SKILLS */
+.skills span {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 22px;
+    border-radius: 30px;
+    background: white;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+/* GALLERY (INSIDE BOX) */
+.gallery {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 22px;
+}
+
+/* SOCIALS */
+.socials {
+    display: flex;
+    gap: 35px;
+    font-size: 32px;
+}
+
+.socials a {
+    color: #333;
+}
+
+/* ANIMATION */
+.fade-target { opacity: 1; }
+
+.fade-in {
+    animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+    .zigzag {
+        flex-direction: column !important;
+        padding: 70px 25px;
+        text-align: center;
+    }
+
+    .zigzag img {
+        width: 240px;
+    }
+
+    .zigzag-box.full-box {
+        padding: 50px;
+    }
+}
